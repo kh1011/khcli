@@ -1,13 +1,19 @@
 {
-  "name": "khcli",
-  "version": "1.0.0",
+  "name": "kh1011-cli",
+  "version": "1.0.1",
   "description": "自定义脚手架",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.0.116:8081/repository/npm-group/"
+  },
   "bin": "./bin/index",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "kh1011"
+  ],
+  "author": "kh",
   "license": "ISC",
   "devDependencies": {
     "commander": "^6.1.0",
@@ -15,7 +21,8 @@
     "fs-extra": "^10.0.0",
     "inquirer": "^7.3.3",
     "mustache": "^4.2.0",
-    "ora": "^5.1.0"
+    "ora": "^5.1.0",
+    "cli-table": "^0.3.6"
   },
   "dependencies": {}
 }

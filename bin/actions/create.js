@@ -5,7 +5,22 @@ const { start } = require("../startProject");
 const path = require("path");
 const { config } = require("../repo");
 
-async function createProject(appName,options){
+async function createProject (appName, options) {
+    
+    const {pwd} = await inquirer.prompt([
+        {
+            type: "input",
+            message: "请输入密码：",
+            name: "pwd",
+            validate: (val) => {
+                if (val === "123") {
+                    return true;
+                }
+                return "密码错误";
+            }
+        },
+    ]);
+
 
     const prompList = [
         {
